@@ -58,7 +58,7 @@ class App extends Component {
   //Function: Performs any form of action after DOM has been updated
   componentDidUpdate(prevProps, prevState, snapshot) {
     console.log(`These are the prevProps ${prevProps} 
-    This is the prevState ${prevState}`);
+    This is the p revState ${prevState}`);
     console.log("Component Updated");
   }
 
@@ -81,12 +81,14 @@ class App extends Component {
     console.log("Whoops, error in one of the lifecycle methods!");
   }
 
+  // Method that adds the count
   addCounter() {
     let { counter } = this.state;
     counter += 1;
     this.setState({ counter });
   }
 
+  // renders our JSX and HTML to the DOM
   render() {
     const { counter } = this.state;
     return (
