@@ -101,3 +101,9 @@ class App extends Component {
 }
 
 export default App;
+
+// Deprecated methods as from React 16:
+
+// componentWillRecieveProps
+// componentWillUpdate
+// componentWillMount
